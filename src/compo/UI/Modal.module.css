@@ -1,0 +1,30 @@
+/* Styling for the backdrop (the semi-transparent overlay) */
+.backdrop {
+  position: fixed;         /* Fixes the backdrop to the viewport */
+  top: 0;                  /* Starts from the top of the viewport */
+  left: 0;                 /* Starts from the left of the viewport */
+  width: 100%;             /* Covers the full width of the viewport */
+  height: 100%;            /* Covers the full height of the viewport */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 10;             /* Ensures the backdrop is above other content */
+}
+
+/* Styling for the modal container (the visible part of the modal) */
+.modal {
+  position: fixed;         /* Fixes the modal to the viewport */
+  top: 50%;                /* Vertically centers the modal */
+  left: 50%;               /* Horizontally centers the modal */
+  transform: translate(-50%, -50%); /* Centers the modal */
+  background: white;       /* Background color for the modal */
+  padding: 1.5rem;         /* Adds some padding around the content */
+  border-radius: 8px;      /* Rounded corners for the modal */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26); /* Adds a shadow for depth */
+  z-index: 100;            /* Ensures the modal is above the backdrop */
+  width: 90%;              /* Responsive width, 90% of viewport width */
+  max-width: 500px;        /* Maximum width of the modal */
+}
+
+/* Styling for the content inside the modal */
+.content {
+  padding: 1rem;           /* Padding around the modal content */
+}

@@ -1,0 +1,7 @@
+.listbox {
+  background-color: #ff3f34;
+  list-style: none;
+  color: #fff;
+  display: flex;
+align-items: center;
+}
